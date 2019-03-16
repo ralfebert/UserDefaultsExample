@@ -1,0 +1,13 @@
+name: UserDefaultsExample
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "10.0"
+targets:
+  UserDefaultsExample:
+    type: application
+    platform: iOS
+    sources: [src]
+    settings:
+      base:
+        SWIFT_VERSION: 4.2
