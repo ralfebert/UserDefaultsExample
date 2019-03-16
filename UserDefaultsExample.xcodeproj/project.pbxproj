@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2688C12B53324E2F424010E9CF3637DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428787DEFCA14A1A4B03601AA0F1DC4B /* LaunchScreen.storyboard */; };
 		9DC11EC7E938C6DEAB7F3588144389E6 /* UserDefaultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B33D491F308C7C7D1BC374D85EDD7 /* UserDefaultsViewController.xib */; };
+		BF77DF01223D047C00A2B559 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF77DF00223D047C00A2B559 /* Settings.bundle */; };
 		C17A72D66A0B6A12B2A8637560B75D00 /* UserDefaultsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193B352C67D07597702D5E6DF650673F /* UserDefaultsExampleApp.swift */; };
 		CD78DCF39E5F5A529CD3802D11A528A3 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A50AF6429BA825367F3A08E4EE5B24 /* UserDefaultsViewController.swift */; };
 		D2184B088B1953A7376054960B2E1B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDAFFEC648D1B5DECC888360F5476BD /* Assets.xcassets */; };
@@ -16,11 +17,12 @@
 
 /* Begin PBXFileReference section */
 		193B352C67D07597702D5E6DF650673F /* UserDefaultsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExampleApp.swift; sourceTree = "<group>"; };
-		36FE9A9F8FFAC59A417972343975A2BE /* UserDefaultsExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = UserDefaultsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FE9A9F8FFAC59A417972343975A2BE /* UserDefaultsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDefaultsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ACD4AC7D3750453CFD2EBCF9A75209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E0B33D491F308C7C7D1BC374D85EDD7 /* UserDefaultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDefaultsViewController.xib; sourceTree = "<group>"; };
 		AE15226BFE460E334A9D9A42960685B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEDAFFEC648D1B5DECC888360F5476BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF77DF00223D047C00A2B559 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D4A50AF6429BA825367F3A08E4EE5B24 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +41,7 @@
 			children = (
 				AE15226BFE460E334A9D9A42960685B1 /* Info.plist */,
 				193B352C67D07597702D5E6DF650673F /* UserDefaultsExampleApp.swift */,
+				BF77DF00223D047C00A2B559 /* Settings.bundle */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF77DF01223D047C00A2B559 /* Settings.bundle in Resources */,
 				D2184B088B1953A7376054960B2E1B1A /* Assets.xcassets in Resources */,
 				2688C12B53324E2F424010E9CF3637DE /* LaunchScreen.storyboard in Resources */,
 				9DC11EC7E938C6DEAB7F3588144389E6 /* UserDefaultsViewController.xib in Resources */,
@@ -276,6 +280,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = R476D442DR;
 				INFOPLIST_FILE = src/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +299,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = R476D442DR;
 				INFOPLIST_FILE = src/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDefaultsViewController" customModule="UserDefaultsExample" customModuleProvider="target">
             <connections>
                 <outlet property="incrementButton" destination="b4r-uq-Pgl" id="EBO-FQ-Rxa"/>
+                <outlet property="sliderValueLabel" destination="FRK-m8-efm" id="513-6w-jCo"/>
                 <outlet property="valueLabel" destination="kZV-al-Dq5" id="okj-EB-W7g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,21 +24,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="TUV-kR-QlI">
-                    <rect key="frame" x="153" y="95" width="69" height="64.5"/>
+                    <rect key="frame" x="67.5" y="95" width="240" height="177.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-al-Dq5">
-                            <rect key="frame" x="13.5" y="0.0" width="42" height="20.5"/>
+                            <rect key="frame" x="99" y="0.0" width="42" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4r-uq-Pgl">
-                            <rect key="frame" x="0.0" y="34.5" width="69" height="30"/>
+                            <rect key="frame" x="85.5" y="34.5" width="69" height="30"/>
                             <state key="normal" title="Increment"/>
                             <connections>
                                 <action selector="increment:" destination="-1" eventType="touchUpInside" id="gAy-Gh-I1u"/>
                             </connections>
                         </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-nN-NDB">
+                            <rect key="frame" x="0.0" y="78.5" width="240" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="aZH-CR-VFk"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider value from preferences:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvH-jP-neL">
+                            <rect key="frame" x="5.5" y="122.5" width="229" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRK-m8-efm">
+                            <rect key="frame" x="99" y="157" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                 </stackView>
             </subviews>
@@ -47,6 +67,7 @@
                 <constraint firstItem="TUV-kR-QlI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nFg-XC-Lov"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="50.824587706146929"/>
         </view>
     </objects>
 </document>
